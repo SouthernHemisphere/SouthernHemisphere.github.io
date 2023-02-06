@@ -1,3 +1,13 @@
 $("document").ready(function() {
-    $("#test").html("Test");
+    $("#greeting").html("Hallo Uli!");
+    window.nameIsUli = true;
+    $("#nameButton").click(function() {
+        if (window.nameIsUli) {
+            $("#greeting").html("Hallo Felix!");
+            window.nameIsUli = false;
+        } else {
+            $("#greeting").html("Hallo Uli!");
+            window.nameIsUli = true;
+        }
+    });
 });
