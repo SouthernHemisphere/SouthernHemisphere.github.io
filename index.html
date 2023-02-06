@@ -4,22 +4,81 @@
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8">
         <title>AllesUgo</title>
+        <style>
+
+            /* Gestaltung Grundsätzliches */
+
+            h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+                
+                margin-top: 0;
+            }
+
+            /* Gestaltung Header*/
+
+            /* Gestaltung Navigation*/
+            .site-nav {
+                
+            }
+            .site-nav ul{
+                background: #eee;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: flex-start;
+                flex-grow: 1;  
+            }
+
+            .site-nav li{
+                list-style: none;
+            }
+            .site-nav ul:first-child, .site-nav ul:last-child {
+                color: red;
+            }
+            
+            .site-nav a{
+                display: block;
+                background-color: #1aa7ec; color: white;
+                text-decoration: none;
+                border: 5px solid white;
+                padding: 0.5rem 1rem;
+                margin-top: 1rem;
+                min-height: 100%;
+            }
+            .site-nav a:hover, .site-nav a:focus {background: #1E2F97; color: white;}
+            .current a{background: #797EF6; color: white;}
+            .toosmall {
+                color: red;
+            }
+
+            /* Gestaltung Main*/
+
+            /* Gestaltung Footer*/
+        </style>
+
     </head>
     <body>
         <header>
 
         </header>
-        <nav>
-
+        <nav class="site-nav">
+            <ul>
+                <li class="current"><a class="toosmall" href="index.html">Start</a></li>
+                <li><a href="/Ungeheuerlichkeiten.html">Alles Ugos Ungewöhnliche Ungeheuerlichkeiten</a></li>
+                <li><a href="/Polarbaeren.html">Polarbären Besichtigung</a></li>
+                <li><a href="/wastun.html">Was tue ich hier?</a></li>
+                <li><a class="toosmall" href="/hilfe.html">Hilfe!!!</a></li>
+            </ul>
         </nav>
         <main>
+            <h1>Start</h1>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script src="/main.js"></script>
             <div id="greeting"></div>
             <button id="nameButton">Klick mich, bitte!</button>
         </main>
         <footer>
-            
+
         </footer>
     </body>
 </html>

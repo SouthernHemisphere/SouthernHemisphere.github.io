@@ -6,7 +6,7 @@ $("document").ready(function() {
             $("#greeting").html("Hallo Felix!");
             window.nameIsUli = false;
         } else {
-            $("#greeting").html("Hallo Uli!");
+            $("#greeting").html("Hallo Das Scheusal!");
             window.nameIsUli = true;
         }
     });
