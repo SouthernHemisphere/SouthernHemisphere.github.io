@@ -1,5 +1,5 @@
 $("document").ready(function() {
-    $("#greeting").html("Hallo Uli!");
+    $("#greeting").html("Hallo Das Scheusal!");
     window.nameIsUli = true;
     $("#nameButton").click(function() {
         if (window.nameIsUli) {
