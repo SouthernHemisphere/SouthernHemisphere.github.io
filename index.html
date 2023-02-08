@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="no-js">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link href="/css/style.css" rel="stylesheet">
         <title>AllesUgo</title>
+
+        <script>
+            document.documentElement.classList.remove('no-js')
+            document.documentElement.classList.add('js')
+        </script>
     </head>
     <body>
         <header>
 
         </header>
         <nav class="site-nav">
+            <button class="menubutton" onclick="this.classList.toggle('showmenu')">Menü</button>
             <ul>
                 <li class="current"><a href="index.html">Start</a></li>
                 <li><a href="/magic-square.html">Alles Ugos Ungewöhnliche Ungeheuerlichkeiten</a></li>
