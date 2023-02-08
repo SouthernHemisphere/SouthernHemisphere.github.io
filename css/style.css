@@ -1,57 +1,11 @@
-/* Gestaltung Grundsätzliches */
+/** =============================================
+    Stylesheet für SouthernHemisphere.github.io
+    
+    style.css
+    Zentrales Stylesheet zum Importieren der Module.
+    Wird in den HTML-Dateien per <link> eingebunden.
 
-*, *::before, *::after {
-        box-sizing: border-box;
-    }
+    ===========================================*/
 
-html {
-    scroll-behavior: smooth;
-}   
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
-                
-    margin-top: 0;
-}
-
-/* Gestaltung Header*/
-
-/* Gestaltung Navigation*/
-.site-nav {
-background: #4ADEDE;
-}
-.site-nav ul{
-    background: #4ADEDE;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: space-between;  
-}
-
-.site-nav li{
-    list-style: none;
-    flex: 0 1 1;
-}
-
-.site-nav a{
-    display: block;
-    background-color: #1aa7ec; color: white;
-    text-decoration: none;
-    border: 5px solid #4ADEDE;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    min-height: 100%;
-}
-.site-nav a:hover, .site-nav a:focus {background: #1E2F97; color: white;}
-.site-nav a:active {color:#4ADEDE;}
-.current a{background: #797EF6; color: white;}
-
-
-/* Gestaltung Main*/
-
-/* Gestaltung Footer*/
+    @import url(basis.css);
+    @import url(navi.css);

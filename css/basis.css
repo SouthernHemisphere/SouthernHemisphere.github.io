@@ -1,0 +1,26 @@
+/** =============================================
+Stylesheet für SouthernHemisphere.github.io
+
+basis.css
+wird in style.css per @import eingebunden
+
+Hier finden sich alle grundsätzlichen CSS-Regeln, die die ganze Website betreffen
+
+===========================================*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}   
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+            
+margin-top: 0;
+}
