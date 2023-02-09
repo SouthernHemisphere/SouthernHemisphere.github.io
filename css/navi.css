@@ -39,10 +39,12 @@ height: 100%;
 
 .site-nav a:hover, .site-nav a:focus {
     background-color: #A199CE;
+    transition: background-color 0.5s ease;
 }
 
 .site-nav a:active {
     background-color: #6C6698;
+    transition: background-color 0.1s ease;
 }
 
 .current a {
