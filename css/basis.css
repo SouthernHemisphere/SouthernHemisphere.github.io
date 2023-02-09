@@ -18,7 +18,7 @@ Hier finden sich alle grundsätzlichen CSS-Regeln, die die ganze Website betreff
 
 html {
 scroll-behavior: smooth;
-background-color: #00CAA3;
+background-color: #1d2026;
 color: #F3ECFF;
 }   
 
@@ -60,6 +60,8 @@ margin-top: 0;
 .content-start .greeting {
     font-weight: bold;
     font-size: larger;
+    margin-top: 20rem;
+    font-size: 3rem;
 }
 
 /* Klick-Mich Button */
@@ -67,12 +69,12 @@ margin-top: 0;
     color: #F3ECFF;
     background-color: #9993FF;
 
-    font-size: inherit;
+    font-size: larger;
     cursor: pointer;
 
     padding: 0.5rem 0.5rem;
-    border: 2px solid #F3ECFF;
-    margin: 0.5rem 0;
+    border: 3px solid #F3ECFF;
+    margin: 3rem 0;
 }
 
 .nameButton:hover, .nameButton:focus {
