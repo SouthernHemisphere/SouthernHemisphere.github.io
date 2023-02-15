@@ -95,6 +95,8 @@ height: 100%;
     overflow: auto;
 }
 
+
+
 /* Gestaltung für breitere Screens */
 
 @media screen and (min-width: 1000px) {
@@ -112,7 +114,29 @@ height: 100%;
         border-left: 1px solid #F3ECFF;
     }
     .site-nav li:last-child { border-right: 1px solid #F3ECFF;}
+    .site-nav li:first-child { 
+        border-left: none;
+        margin-right: auto;
+    }
+
+    .blinds svg {
+        margin: 1rem;
+        justify-self: start;
+        align-self: center;
+        fill: currentColor;
+    }
+
 }
+
+
+
+/* Gestaltung für schmalere Screens */
+
+@media screen and (max-width: 1000px) {
+    .js .site-nav ul li.blinds {
+        display: none !important;
+    }
+};
 
 
 
