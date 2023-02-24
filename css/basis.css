@@ -92,60 +92,36 @@ margin-top: 0;
 /**
     * 3. Gestaltung der Ungeheuerlichkeiten
     */
+    .content-ungeheuer {
+        	text-align: center;
+    }
 
-.content-ungeheuer {
-    text-align: center;
-}
+    .content-ungeheuer .content-intro .container-container {
+        display: flex;
+        justify-content: center;
+    }
 
-.content-ungeheuer .content-intro > blockquote {
-    display: inline-block;
-    background-color: #9993FF;
-    line-height: 1rem;
+    .content-ungeheuer .content-intro  h1 {
+        color: #d9c526;
+    }
 
-    padding: 1rem;
-    border: 2px solid #F3ECFF;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    .content-ungeheuer .content-intro .image-container {
+        display: flex;
+        align-items: center;
+        background-color: #4151bd;
+        color: #222222;
+        font-weight: 600;
+        font-style: italic;
+        justify-content: space-evenly;
+        padding: 1.5rem 0;
+        width: 600px;
+        border-radius: 10% / 50%;
+    }
 
-}
-
-.content-ungeheuer .content-inhalte {
-    
-    max-width: 500px;
-    margin: 5rem auto 0;
-   
-    line-height: 1rem;
-    text-align: center;
-}
-
-.content-ungeheuer .content-inhalte li{
-    list-style-position: inside;
-}
-
-.content-ungeheuer .content-inhalte a {
-    display: inline-block;
-    color: #F3ECFF;
-    background-color: #9993FF;
-    text-decoration: none;
-
-    font-size: inherit;
-    cursor: pointer;
-
-    padding: 0.5rem 0.5rem;
-    border: 2px solid #F3ECFF;
-    margin: 1rem 0;
-}
-
-.content-ungeheuer .content-inhalte a:hover, .content-ungeheuer .content-inhalte a:focus {
-    background-color: #A199CE;
-    color: white;
-    transition: background-color 0.5s ease;
-}
-
-.content-ungeheuer .content-inhalte a:active {
-    background-color: #6C6698;
-    transition: background-color 0.1s ease;
-}
+    .content-ungeheuer .content-intro .image-container > blockquote
+    {
+        line-height: 0.5RRrem;
+    }
 
 /* 
 Color-Schemes:
