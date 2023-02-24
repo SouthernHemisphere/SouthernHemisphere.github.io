@@ -123,6 +123,23 @@ margin-top: 0;
         line-height: 0.5RRrem;
     }
 
+/**
+ * slideshow
+ */
+.slideShow {
+    display: flex;
+    justify-content: center;
+}
+
+.slideShow .slide {
+    width: 80%;
+    text-align: center;
+}
+
+.slideShow img {
+    width: 100%;
+}
+
 /* 
 Color-Schemes:
 
