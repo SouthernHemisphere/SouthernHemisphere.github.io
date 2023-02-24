@@ -39,10 +39,62 @@
         <main>
             <div class="slideShow">
                 <div class="slide">
-                    <img src="bilder/pexels-ad-thiry-14883123.jpg">
-                    <button class="previousButton">zurück</button>
-                    <button class="nextButton">weiter</button>
-                    Text
+                    <div class="slideShowImageContainer">
+                        <div class="slideShowImage" data-index="1" data-current="true">
+                            <img src="bilder/pexels-ad-thiry-14883123.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="2" data-current="false" hidden>
+                            <img src="bilder/pexels-pixabay-48153.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="3" data-current="false" hidden>
+                            <img src="bilder/pexels-daniel-battersby-9965358.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="4" data-current="false" hidden>
+                            <img src="bilder/pexels-erik-karits-3743888.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="5" data-current="false" hidden>
+                            <img src="bilder/pexels-esteban-arango-9601539.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="6" data-current="false" hidden>
+                            <img src="bilder/pexels-michael-gattorna-5147789.jpg">
+                        </div>
+                        <div class="slideShowImage" data-index="7" data-current="false" hidden>
+                            <img src="bilder/pexels-magda-ehlers-451230.jpg">
+                        </div>
+                        <button class="slideshowButton previousButton"><i class="fa fa-chevron-left fa-2x"></i></button>
+                        <button class="slideshowButton nextButton"><i class="fa fa-chevron-right fa-2x"></i></button>
+                    </div>
+                    <div class="slideShowTextContainer">
+                        <div class="slideShowText" data-index="1" data-current="true">
+                            Der Eisbär (Ursus maritimus), auch Polarbär genannt, ist eine Raubtierart aus der Familie der Bären (Ursidae).
+                            Polarbären sind... Moment mal, das ist ja gar kein Polarbär!? Wie hat sich denn dieser niedliche Hund hier eingeschlichen?
+                        </div>
+                        <div class="slideShowText" data-index="2" data-current="false" hidden>
+                            Wie der lateinische Name Ursus maritimus (zu Deutsch: See-Bär) andeutet, sind Polarbären exzellente Schwimmer.
+                            Vielleicht machen Sie sich beim nächsten Strandurlaub keine Sorgen mehr um weiße Haie, wo doch auch weiße Bären in den Untiefen lauern können?
+                        </div>
+                        <div class="slideShowText" data-index="3" data-current="false" hidden>
+                            Anders als gewisse andere maritime Bären (Blaubären...) spinnt der Polarbär selten Seemannsgarn.
+                            Seine Freizeit verbringt er lieber mit Cocktails und Sonnenbädern.
+                        </div>
+                        <div class="slideShowText" data-index="4" data-current="false" hidden>
+                            Falls Sie bei den ganzen Polarbär-Bildern jetzt denken: Lecker! Entgegnen wir: Pfui!
+                            Das Jagen und Verspeisen von Polarbären ist selbstverständlich nur Polarbären gestattet.
+                            Das Gerücht Eisbären würden nach Speiseeis schmecken ist bekanntermaßen haltlos.
+                        </div>
+                        <div class="slideShowText" data-index="5" data-current="false" hidden>
+                            Wegen ihrer Vorliebe für Pelze stehen Polarbären bei Tierschützern stark unter Kritik.
+                            Was meinen Sie, wie viele Nerze für diesen Pelz ihr Leben lassen mussten!?
+                        </div>
+                        <div class="slideShowText" data-index="6" data-current="false" hidden>
+                            Auf Kritik reagieren Polarbären allerdings oft gereizt.
+                            Diesem Exemplar hier wurde lediglich nahe gelegt gelegentlich auch mal zu lächeln.
+                            Diese Trotzreaktion ist selbstverständlich total unangebracht, von jemandem, der schon so alt ist, dass die Haare weiß sind, sollte man doch mehr Reife erwarten können!
+                        </div>
+                        <div class="slideShowText" data-index="7" data-current="false" hidden>
+                            Nach dieser Polarbären-Expidition sind wir jetzt alle müde. Ab ins Bett, hopp, hopp!
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -50,4 +102,7 @@
             
         </footer>
     </body>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scripts/slideShow.js"></script>
 </html>
