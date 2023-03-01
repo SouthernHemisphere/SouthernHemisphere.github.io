@@ -1,4 +1,4 @@
-var magicSquareApp = {
+let magicSquareApp = {
     init: function() {
         Plotly.newPlot('magicSquare', [{
             x: [1, 1, 1, 0, 0, 0 , -1, -1, -1],
@@ -10,32 +10,32 @@ var magicSquareApp = {
             mode: 'markers+text'
         }], {
             xaxis: {range: [-3,3],
-                showgrid: false,
-                zeroline: false,
-                showline: false,
-                autotick: true,
-                ticks: '',
-                showticklabels: false},
+                    showgrid: false,
+                    zeroline: false,
+                    showline: false,
+                    autotick: true,
+                    ticks: '',
+                    showticklabels: false},
             yaxis: {range: [-3,3],
-                showgrid: false,
-                zeroline: false,
-                showline: false,
-                autotick: true,
-                ticks: '',
-                showticklabels: false}
+                    showgrid: false,
+                    zeroline: false,
+                    showline: false,
+                    autotick: true,
+                    ticks: '',
+                    showticklabels: false}
         });
 
         $("#toggleMagicSquare").click($.proxy(this.animateShuffle, this));
     },
 
     animateShuffle: function() {
-        var data;
+        let data;
         if (this.toggle) {
-            data = [{x: [1, 1, 1, 0, 0, 0 , -1, -1, -1],
-                y: [1, 0, -1, 1, 0, -1, 1, 0, -1]}];
+            data = [{x: [1, 1, 1, 0, 0, 0, -1, -1, -1],
+                     y: [1, 0, -1, 1, 0, -1, 1, 0, -1]}];
         } else {
-            data = [{x: [1, -2, 1, 0, 0, 0 , -1, 2, -1],
-                y: [1, 0, -1, -2, 0, 2, 1, 0, -1]}];
+            data = [{x: [1, -2, 1, 0, 0, 0, -1, 2, -1],
+                     y: [1, 0, -1, -2, 0, 2, 1, 0, -1]}];
         }
         Plotly.animate('magicSquare', [{
             data: data
