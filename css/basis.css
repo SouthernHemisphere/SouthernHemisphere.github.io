@@ -18,8 +18,20 @@ Hier finden sich alle grundsätzlichen CSS-Regeln, die die ganze Website betreff
 
 html {
 scroll-behavior: smooth;
-background-color: #1d2026;
-color: #F3ECFF;
+
+--clr-primary-100: #F3ECFF;
+--clr-primary-300: #d9c526;
+--clr-primary-900: #222222;
+
+--clr-secondary-500: #0094EB;
+--clr-secondary-700: #4151bd;
+--clr-secondary-800: #263075;
+
+
+
+background-color: var(--clr-primary-900);
+color: var(--clr-primary-100);
+
 }   
 
 body {
@@ -66,27 +78,31 @@ margin-top: 0;
 
 /* Klick-Mich Button */
 .nameButton {
-    color: #F3ECFF;
-    background-color: #9993FF;
+    color: var(--clr-primary-100);
+    background-color: var(--clr-secondary-800);
 
     font-size: larger;
     cursor: pointer;
 
     padding: 0.5rem 0.5rem;
-    border: 3px solid #F3ECFF;
+    border: 3px solid var(--clr-secondary-700);
     margin: 3rem 0;
 }
 
 .nameButton:hover, .nameButton:focus {
-    background-color: #A199CE;
-    color: white;
+    background-color: var(--clr-secondary-800);
+    color: var(--clr-primary-300);
     transition: background-color 0.5s ease;
 }
 
 .nameButton:active {
-    background-color: #6C6698;
+    background-color: var(--clr-secondary-700);
     transition: background-color 0.1s ease;
 }
+
+/* Überschrift */
+
+
 
 
 /**
